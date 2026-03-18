@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Card */
+
+.container {
+    width: 600px;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 32px;
+    color: #1a3c6e;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Each field block */
+
+.field {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* File input */
+
+input[type="file"] {
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Button */
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #155bb5;
+}

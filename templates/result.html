@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>📊 Verification Result</h1>
+
+    <div class="status-box">
+        Status:
+        <span class="{{ 'pass' if status == 'VERIFIED' else 'fail' }}">
+            {{ status }}
+        </span>
+    </div>
+
+    <h2>Extracted Data</h2>
+
+    {% if data %}
+        {% for doc, details in data.items() %}
+            <div class="doc-card">
+                <h3>{{ doc }}</h3>
+                <ul>
+                    {% for key, value in details.items() %}
+                        <li><strong>{{ key }}:</strong> {{ value }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No data extracted.</p>
+    {% endif %}
+
+    <a href="/" class="btn">🔁 Verify Another</a>
+</div>
+
+</body>
+</html>
